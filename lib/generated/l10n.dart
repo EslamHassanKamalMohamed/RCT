@@ -250,6 +250,16 @@ class S {
     );
   }
 
+  /// `remove`
+  String get remove {
+    return Intl.message(
+      'remove',
+      name: 'remove',
+      desc: '',
+      args: [],
+    );
+  }
+
   /// `Calculator & Projects`
   String get calculatorProjects {
     return Intl.message(

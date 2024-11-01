@@ -54,7 +54,7 @@ class DefaultFirebaseOptions {
     messagingSenderId: '288573191873',
     projectId: 'rct-app-88887',
     storageBucket: 'rct-app-88887.appspot.com',
-    iosBundleId: 'com.rctApp2024.rct',
+    iosBundleId: 'com.rct.app',
   );
 
   static const FirebaseOptions web = FirebaseOptions(

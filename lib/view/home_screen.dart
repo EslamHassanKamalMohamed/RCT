@@ -400,6 +400,32 @@ class _HomeScreenState extends State<HomeScreen> {
                   )
                 : Container(),
             const Divider(),
+            loged
+                ? Column(
+              children: [
+                const Divider(),
+                ListTile(
+                  title: Text(
+                    local.removeaccount,
+                    style: TextStyle(
+                        color: Colors.red,
+                        fontSize: 12,
+                        fontWeight: FontWeight.bold),
+                  ),
+                  leading: SvgPicture.asset("$iconsPath/Vector-4.svg"),
+                  // titleTextStyle: Theme.of(context).textTheme.titleMedium,
+                  onTap: () async {
+                    await secureStorage.deleteAll();
+                    Navigator.of(context).pushReplacement(
+                        MaterialPageRoute(
+                            builder: (context) => SendOtp()));
+                    // SystemChannels.platform.invokeMethod('SystemNavigator.pop');
+                  },
+                ),
+              ],
+            )
+                : Container(),
+            const Divider(),
           ],
         ),
       ),

@@ -123,7 +123,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "loginError": MessageLookupByLibrary.simpleMessage(
             "An error occurred during login"),
         "logout": MessageLookupByLibrary.simpleMessage("Logout"),
-        "mainPhoto": MessageLookupByLibrary.simpleMessage("Main Photo "),
+    "removeaccount": MessageLookupByLibrary.simpleMessage("Remove"),
+    "mainPhoto": MessageLookupByLibrary.simpleMessage("Main Photo "),
         "name": MessageLookupByLibrary.simpleMessage("Name"),
         "nationalIdOrCommercialRegister": MessageLookupByLibrary.simpleMessage(
             "National ID or Commercial Register *"),
